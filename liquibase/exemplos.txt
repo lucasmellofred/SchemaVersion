@@ -1,0 +1,5 @@
+liquibase --changeLogFile=changes\dbchangelog.xml --url=jdbc:h2:tcp://127.0.0.1/~/test --username=h2 --password=h2 migrate
+
+liquibase --changeLogFile=changes\dbchangelog.xml --url=jdbc:h2:tcp://127.0.0.1/~/teste --username=h2 --password=h2 tag test
+
+liquibase --changeLogFile=changes\dbchangelog.xml --url=jdbc:h2:tcp://127.0.0.1/~/teste --username=h2 --password=h2 rollback test

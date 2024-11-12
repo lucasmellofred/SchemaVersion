@@ -1,0 +1,7 @@
+Breaking changes: Removed`check.url`, `check.password` and `check.username`. These undocumented historic fields have been deprecated for a while and have confusing impacts (such as not working in all check functionality). It is recommended to use environments to replace this functionality, alternatively, check does support standard `url`, `username` and `password`
+Bug fixes: Fixed an issue that the Repair command was unable to remove failed Repeatable migration entries in schema history table for MongoDB
+Changes: Backup provisioner now puts database into single user mode before restoring
+Changes: Legacy Flyway keys (FL0...) are now deprecated
+Java compatibility: Issue 3978 Update H2 2.3.224 to 2.3.232
+Java compatibility: Upgrade snowflake-jdbc 3.14.3 to 3.20.0 to fix CVE-2024-43382
+Performance improvements: Improved `repair` performance when removing failed migrations

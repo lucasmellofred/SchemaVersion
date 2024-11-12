@@ -1,0 +1,8 @@
+Para validar:
+flyway -user=h2 -password=h2 -url=jdbc:h2:tcp://127.0.0.1/~/test validate
+
+Para executar a migração:
+flyway -user=h2 -password=h2 -url=jdbc:h2:tcp://127.0.0.1/~/test migrate
+
+Para definir uma baseline:
+flyway -user=h2 -password=h2 -url=jdbc:h2:tcp://127.0.0.1/~/test baseline
