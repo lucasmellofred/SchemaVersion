@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="1-create-table-countrys.xml" relativeToChangelogFile="true"/>
+    <include file="2-create-table-jobs.xml" relativeToChangelogFile="true"/>
+    <include file="3-create-table-jobhistory.xml" relativeToChangelogFile="true"/>
+    <include file="4-rename-table.xml" relativeToChangelogFile="true"/>
+    <include file="5-tag-stable.xml" relativeToChangelogFile="true"/>
+    <include file="6-create-table-locations.xml" relativeToChangelogFile="true"/>
+    <include file="7-add-column-regionid.xml" relativeToChangelogFile="true"/>
+    <include file="8-remove-city-table-locations.xml" relativeToChangelogFile="true"/>
+    <include file="9-tag-vesion2.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>
